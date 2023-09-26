@@ -1,0 +1,133 @@
+/* Variables Here */
+:root{
+    /* Colors */
+    --primary: #ff723e;
+    --sec: rgba(103, 103, 103, 0.3);
+    --w: #fff;
+    --b: #000;
+    /* Fonts */
+    --pop: 'Poppins', sans-serif;
+}
+
+
+
+
+
+/* Common CSS Here */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(./assets/Images/dark-bg.jpg);
+    /* background: url(./assets/Images/dark-bg-2.jpeg); */
+    /* background: #262829 !important; */
+    /* background: #053a54 !important; */
+    height: 100%;
+    font-family: var(--pop) !important;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+.com_btn{
+    padding: 15px 30px;
+    background: transparent;
+    color: var(--w);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 20px;
+    transition: all linear .3s;
+    border: 1px solid var(--w);
+}
+.com_btn:hover{
+    background: var(--primary);
+    border-color: var(--primary);
+}
+.heading_row{
+    position: relative;
+    text-align: center;
+}
+.heading_row .com_sec_head{
+    color: var(--w);
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.heading_row span{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--primary);
+    font-size: 130px;
+    font-weight: 700;
+    z-index: -1;
+    opacity: .1;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+/* =============================================================
+                Responsive CSS Starts Here
+==============================================================*/
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1311px) and (max-width: 1399.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1310.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    .com_btn {
+        padding: 12px 30px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    .heading_row .com_sec_head {
+        font-size: 35px;
+    }
+}

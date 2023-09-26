@@ -1,0 +1,135 @@
+.banner_section{
+    padding: 150px 0;
+}
+.banner_section .banner_row .banner_left .banner_text .banner_title{
+    color: var(--w);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 80px;
+} 
+.banner_section .banner_row .banner_left .banner_text .banner_pera{
+    color: var(--w);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: .8;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.banner_section .banner_row .banner_right .banner_image{
+    position: relative;
+}
+.banner_section .banner_row .banner_right .banner_image img{
+    width: 100%;
+    max-width: 280px;
+    border-radius: 20px;
+    position: absolute;
+    padding: 1px;
+    background: linear-gradient(yellow, aqua);
+    transition: all linear .3s;
+}
+@keyframes br {
+    0%,100%{
+        background: rgb(255,0,0);
+        background: linear-gradient(35deg, white 0%, aqua 70%); 
+    }
+    50%{
+        background: rgb(255,0,0);
+        background: linear-gradient(35deg, aqua 0%, white 70%); 
+    }
+}
+.banner_section .banner_row .banner_right .banner_image img:hover{
+    transform: rotate(5deg);
+    z-index: 3;
+}
+.banner_section .banner_row .banner_right .banner_image img:first-child{
+    top: -60px;
+    left: 25%;
+    animation: br 2000ms infinite;
+}
+.banner_section .banner_row .banner_right .banner_image img:nth-child(2){
+    top: 180px;
+    left: 0;
+    animation: br 3000ms infinite;
+}
+.banner_section .banner_row .banner_right .banner_image img:nth-child(3) {
+	top: 100px;
+	left: 380px;
+    animation: br 4000ms infinite;
+}
+
+
+
+
+
+
+
+
+/* =============================================================
+                Responsive CSS Starts Here
+==============================================================*/
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1311px) and (max-width: 1399.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1310.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    .banner_section {
+        padding: 150px 0 0;
+    }
+    .banner_section .banner_row .banner_right .banner_image img {
+        max-width: 140px;
+    }
+    .banner_section .banner_row .banner_right .banner_image img:first-child {
+        top: -90px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner_section .banner_row .banner_right .banner_image img:nth-child(2) {
+        top: 37px;
+        left: 6%;
+    }
+    .banner_section .banner_row .banner_right .banner_image img:nth-child(3) {
+        top: 20px;
+        left: auto;
+        right: 6%;
+    }
+    .banner_section .banner_row .banner_left .banner_text{
+        margin-top: 200px;
+        text-align: center;
+    }
+    .banner_section .banner_row .banner_left .banner_text .banner_title {
+        font-size: 38px;
+        line-height: 60px;
+    }
+    .banner_section .banner_row .banner_left .banner_text .banner_pera {
+        font-size: 13px;
+        line-height: 28px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .heading_row span {
+        display: none;
+    }
+}

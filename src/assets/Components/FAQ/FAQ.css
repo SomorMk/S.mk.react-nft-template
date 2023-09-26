@@ -1,0 +1,43 @@
+.faq_section{
+    padding: 100px 0;
+}
+.faq_section .faq_row{
+    margin-top: 100px;
+}
+.faq_section .faq_row .faq_col .faq_left .faq_item{
+    background: transparent !important;
+    border: none;
+    border-bottom: 1px solid var(--w);
+    padding: 20px 0;
+}
+.faq_section .faq_row .faq_col .faq_left .faq_item:last-child{
+    border-bottom: none;
+}
+.faq_section .faq_row .faq_col .faq_left .faq_item .accordion-button{
+    background: transparent !important;
+    border: none;
+    padding: 0;
+    color: var(--w);
+    font-size: 20px;
+    font-weight: 500;
+}
+.faq_section .faq_row .faq_col .faq_left .faq_item .accordion-button:focus {
+	box-shadow: none;
+}
+.faq_section .faq_row .faq_col .faq_left .faq_item .accordion-button:not(.collapsed) {
+	box-shadow: none;
+}
+.accordion-button::after {
+    width: 50px;
+	background: aquamarine;
+    border-radius: 50%;
+}
+.faq_section .faq_row .faq_col .faq_left .faq_item .faq_ans{
+    padding: 0;
+    color: var(--w);
+    font-size: 16px;
+    font-weight: 400;
+    opacity: .7;
+    margin-top: 20px;
+    padding-left: 30px;
+}
