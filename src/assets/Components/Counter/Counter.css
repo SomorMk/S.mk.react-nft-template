@@ -1,0 +1,59 @@
+.counter_section{
+    padding: 100px 0;
+}
+.counter_section .counter_row .counter_col .counter_item{
+    padding: 40px 20px;
+    background: rgba(38, 40, 41, 0.3);
+    border-radius: 20px;
+    text-align: center;
+}
+.counter_section .counter_row .counter_col .counter_item .counter_number{
+    color: var(--w);
+    font-size: 40px;
+    font-weight: 600;
+}
+.counter_section .counter_row .counter_col .counter_item .counter_text{
+    color: var(--w);
+    font-size: 18px;
+    font-weight: 400;
+    opacity: .7;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* =============================================================
+                Responsive CSS Starts Here
+==============================================================*/
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1311px) and (max-width: 1399.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1310.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    .counter_section .counter_row .counter_col .counter_item {
+        padding: 30px 10px;
+        margin-bottom: 24px;
+    }
+    .counter_section .counter_row .counter_col .counter_item .counter_number {
+        font-size: 25px;
+    }
+    .counter_section .counter_row .counter_col .counter_item .counter_text {
+        font-size: 12px;
+    }
+}

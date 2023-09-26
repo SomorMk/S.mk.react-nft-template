@@ -1,0 +1,89 @@
+.community_section{
+    padding: 150px 0 100px;
+    position: relative;
+    z-index: 1;
+}
+.community_section .top_head{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: var(--primary);
+    font-size: 130px;
+    font-weight: 700;
+    z-index: -1;
+    opacity: .2;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.community_section .community_row .community_col .community_inner{
+    padding: 50px;
+    background: rgba(103, 103, 103, 0.3);
+    border-radius: 20px;
+    text-align: center;
+}
+.community_section .community_row .community_col .community_inner i{
+    color: var(--w);
+    font-size: 100px;
+}
+.community_section .community_row .community_col .community_inner .community_head{
+    color: var(--w);
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.community_section .community_row .community_col .community_inner .com_btn{
+    color: var(--primary);
+    background: var(--w);
+    transition: all linear .3s;
+}
+.community_section .community_row .community_col .community_inner .com_btn:hover{
+    background: var(--primary);
+    color: var(--w);
+}
+
+
+
+
+
+
+
+
+/* =============================================================
+                Responsive CSS Starts Here
+==============================================================*/
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1311px) and (max-width: 1399.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1310.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    .community_section {
+        padding: 20px 0 100px;
+    }
+    .community_section .top_head {
+        top: -10px;
+        font-size: 40px;
+    }
+    .community_section .community_row .community_col .community_inner {
+        padding: 50px 10px;
+    }
+    .community_section .community_row .community_col .community_inner .community_head {
+        font-size: 20px;
+    }
+    .community_section .community_row .community_col .community_inner i {
+        font-size: 60px;
+    }
+}

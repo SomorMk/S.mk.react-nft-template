@@ -1,0 +1,76 @@
+.team_section{
+    padding: 100px 0;
+}
+.team_section .team_row{
+    margin-top: 100px;
+}
+.team_section .team_row .team_col .team_item{
+    padding: 30px;
+    width: 100%;
+    background: #121519;;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+.team_section .team_row .team_col .team_item:hover .image img{
+    filter: grayscale(0%);
+}
+.team_section .team_row .team_col .team_item .image img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    filter: grayscale(100%);
+    transition: all linear .5s;
+}
+.team_section .team_row .team_col .team_item .text{
+    margin-top: 20px;
+    text-align: center;
+}
+.team_section .team_row .team_col .team_item .text .member_name{
+    color: var(--w);
+    font-size: 26px;
+    font-weight: 500;
+}
+.team_section .team_row .team_col .team_item .text .member_position{
+    color: var(--w);
+    font-size: 16px;
+    font-weight: 500;
+    opacity: .7;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================================================
+                Responsive CSS Starts Here
+==============================================================*/
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1311px) and (max-width: 1399.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1310.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    .team_section .team_row .team_col .team_item .text .member_name {
+        font-size: 20px;
+    }
+    .team_section .team_row .team_col .team_item .text .member_position {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
